@@ -21,7 +21,25 @@ public class Test {  // Define a public class named Test
 
 // Output:
 // 13
-
+Calculation Steps for obj.calc(7) in Class C:
+calc(7) = calc(6) + calc(4)
+calc(6) = calc(5) + calc(3)
+calc(5) = calc(4) + calc(2)
+calc(4) = calc(3) + calc(1)
+calc(3) = calc(2) + calc(0)
+calc(2) = calc(1) + calc(-1) (returns 1 since calc(-1) is not defined)
+calc(0) = 0
+calc(1) = 1
+calc(1) = 1
+calc(2) = calc(1) + calc(-1) (returns 1 since calc(-1) is not defined)
+calc(3) = calc(2) + calc(0)
+calc(2) = calc(1) + calc(-1) (returns 1 since calc(-1) is not defined)
+calc(0) = 0
+calc(4) = calc(3) + calc(1)
+calc(3) = calc(2) + calc(0)
+calc(2) = calc(1) + calc(-1) (returns 1 since calc(-1) is not defined)
+calc(0) = 0
+calc(1) = 1
 
 // class P {
 //   public int calc (int n) {
