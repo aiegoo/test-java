@@ -2,7 +2,7 @@ abstract class Animal {
     abstract void makeSound();
     String a = " is an animal.";
     void show() {
-        System.out.println("This" + a);
+        System.out.println("Zoo");
     }
 }
 
@@ -13,7 +13,7 @@ class Chicken extends Animal {
 
     @Override
     void look() {
-        System.out.println("This" + a);
+        System.out.println("Chicken" + a);
     }
 
     @Override
@@ -24,6 +24,12 @@ class Chicken extends Animal {
     void display() {
         System.out.println("Chicken is a bird.");
     }
+
+    @Override
+    void show() {
+        System.out.println("Chicken" + a);
+        System.out.println("Zoo");
+    }
 }
 
 public class Test {
@@ -33,6 +39,5 @@ public class Test {
     }
 }
 // output
-// This is an animal.
-// This is an animal.
-// This is an animal.
+// Chicken is an animal.
+// Zoo
