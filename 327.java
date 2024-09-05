@@ -15,3 +15,17 @@ public class Test {
 
 // output
 // 0 1 2 3
+
+public class Test {
+  public static void main(String[] args) {
+    System.out.print(Test.check(1));
+  }
+  static String check(int num) {
+    if(num == 1)
+      return "one";
+    else if(num == 2)
+      return "two";
+    else
+      return "none";
+  }
+}
