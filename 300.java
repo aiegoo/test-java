@@ -5,12 +5,13 @@ class Static {
 public class Test {
   public static void main(String[] args) {
     int a = 10;
-    Static.b = a;
     Static st = new Static();
-    System.out.println(Static.b++);
-    System.out.println(st.b);
-    System.out.println(a);
-    System.out.println(st.a);
+    st.b = a;
+
+    System.out.println(st.b++); // Prints 10, then increments st.b to 11
+    System.out.println(st.b);   // Prints 11
+    System.out.println(a);      // Prints 10
+    System.out.println(st.a);   // Prints 20 This prints the value of st.a, which is 20 (initialized in the Static class).
   }
 
 }
