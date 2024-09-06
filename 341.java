@@ -6,12 +6,11 @@ class P {  // Define a class named P
 }
 
 class C extends P {  // Define a class named C that extends class P
-  public int calc(int n) {  // Override the calc method in class P
+  public int calc(int n) {  // Override the calc method in class P  7
     if (n <= 1) return n;  // Base case: if n is 0 or 1, return n
-    return calc(n - 1) + calc(n - 3);  // Recursive case: return the sum of calc(n-1) and calc(n-3)
-  }
+    return calc(n - 1) + calc(n - 3);  // Recursive case: return the sum of calc(n-1) and calc(n-3) 6 + 4
 }
-
+}
 public class Test {  // Define a public class named Test
   public static void main(String[] args) {  // Define the main method, the entry point of the program
     P obj = new C();  // Create an instance of class C and assign it to a reference of type P
@@ -19,8 +18,8 @@ public class Test {  // Define a public class named Test
   }
 }
 
-// Output:
-// 13
+// Output: https://youtu.be/CBrWFgcTkao?si=mtGPuojXpAVpfKnz&t=273
+// 2
 // Calculation Steps for obj.calc(7) in Class C:
 // calc(7) = calc(6) + calc(4)
 // calc(6) = calc(5) + calc(3)
