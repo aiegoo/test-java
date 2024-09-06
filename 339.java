@@ -33,7 +33,26 @@ public class Test {  // Define a public class named Test
 // C
 // D
 // D
-
+// Explanation:
+// Class Definitions:
+// 
+// SuperObject:
+// draw(): Prints "A".
+// paint(): Prints "B" and then calls draw().
+// SubObject:
+// Inherits from SuperObject.
+// Overrides draw(): Prints "D".
+// Overrides paint(): Calls super.paint(), prints "C", and then calls draw().
+// Main Method Execution:
+// 
+// SuperObject s = new SubObject();: Creates an instance of SubObject and assigns it to a SuperObject reference s.
+// s.paint();: Calls the overridden paint() method in SubObject.
+// super.paint();: Calls the paint() method in SuperObject.
+// Prints "B".
+// Calls draw(): Since s is an instance of SubObject, it calls the overridden draw() method in SubObject, which prints "D".
+// Prints "C".
+// Calls draw(): Calls the overridden draw() method in SubObject, which prints "D".
+// s.draw();: Calls the overridden draw() method in SubObject, which prints "D".
 // Explanation:
 // 1. The main method creates an instance of SubObject and assigns it to a SuperObject reference s.
 // 2. When s.paint() is called, the paint method of SubObject is executed. This method first calls super.paint(), which calls the paint method of SuperObject. The paint method of SuperObject prints "B" and then calls draw(). Since draw() is overridden in SubObject, the overridden draw method in SubObject is called, which prints "D".
