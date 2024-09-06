@@ -20,7 +20,7 @@ class SubObject extends SuperObject {  // Define a class named SubObject that ex
     }
 }
 
-public class Test {  // Define a public class named Test
+public class Test2 {  // Define a public class named Test
     public static void main(String[] args) {  // Define the main method, the entry point of the program
         SuperObject s = new SubObject();  // Create an instance of SubObject and assign it to a SuperObject reference
         s.paint();  // Call the paint method on the SuperObject reference (this will call the overridden paint method in SubObject)
